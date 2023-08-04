@@ -132,7 +132,7 @@ public_folder: "/images/uploads" # The src attribute for uploaded media will beg
 
 The configuration above adds a new setting: `public_folder`. Whereas `media_folder` specifies where uploaded files are saved in the repo, `public_folder` indicates where they are found in the published site. Image `src` attributes use this path, which is relative to the file where it's called. For this reason, we usually start the path at the site root, using the opening `/`.
 
-*__Note:__ If `public_folder` is not set, Decap CMS defaults to the same value as `media_folder`, adding an opening `/` if one is not included.*
+***Note:** If `public_folder` is not set, Decap CMS defaults to the same value as `media_folder`, adding an opening `/` if one is not included.*
 
 ### Collections
 
@@ -281,15 +281,15 @@ If you set your registration preference to "Invite only," invite yourself (and a
 
 If you left your site registration open, or for return visits after confirming an email invitation, access your site's CMS at `yoursite.com/admin/`.
 
----
+- - -
+
 **Note:** No matter where you access Decap CMS — whether running locally, in a staging environment, or in your published site — it always fetches and commits files in your hosted repository (for example, on GitHub), on the branch you configured in your Decap CMS `config.yml` file.
 
 This means:
 
-- Content fetched in the admin UI matches the content in the repository, which may be different from your locally running site.
+* Content fetched in the admin UI matches the content in the repository, which may be different from your locally running site.
+* Content saved using the admin UI saves directly to the hosted repository, even if you're running the UI locally or in staging.
 
-- Content saved using the admin UI saves directly to the hosted repository, even if you're running the UI locally or in staging.
-
----
+- - -
 
 Happy posting!
